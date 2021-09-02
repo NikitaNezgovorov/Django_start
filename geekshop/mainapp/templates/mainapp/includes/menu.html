@@ -7,8 +7,8 @@
             Главная
         </a>
         </li>
-        <li><a href="{% url 'product' %}"
-               class="{% if request.resolver_match.url_name == 'product' %}active{% endif %}">
+        <li><a href="{% url 'product:index' %}"
+               class="{% if request.resolver_match.url_name == 'index' or request.resolver_match.url_name == 'category'  %}active{% endif %}">
             продукты
         </a>
 
