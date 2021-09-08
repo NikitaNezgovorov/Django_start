@@ -35,4 +35,4 @@ class Command(BaseCommand):
             new_product.save()
 
         # Создаем суперпользователя при помощи менеджера модели
-        super_user = ShopUser.objects.create_superuser('django5', 'django@geekshop.local', 'geekbrains', age=33)
+        super_user = ShopUser.objects.create_superuser('Nick', 'django@geekshop.local', 'sadist12345', age=33)
