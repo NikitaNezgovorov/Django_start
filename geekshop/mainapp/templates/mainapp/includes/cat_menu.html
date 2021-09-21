@@ -7,12 +7,14 @@
             </a>
         </li>
         {% for category in links_menu %}
+            {% if category.is_active  %}
             <li>
                 <a href="{% url 'products:category' pk=category.pk %}"
                    class="{% if request.resolver_match.kwargs.pk|add:0 == category.pk %}active{% endif %} ">
                 {{ category.name }}
                 </a>
             </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </div>

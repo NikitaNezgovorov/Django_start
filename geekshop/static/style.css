@@ -90,6 +90,16 @@ html, body {
 	left: 1210px;
 }
 
+.basket span {
+	padding-left: 27px;
+	color: #8c8c8c;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	height: 23px;
+	display: inline-block;
+	width: 100px;
+}
 .clearfix:after {
 	content: "";
 	display: block;
