@@ -2,7 +2,7 @@
     {
         "category": "Стулья",
         "name": "Отличный стул",
-        "image": "/img/product-4.jpg",
+        "image": "products_images/product-1.jpg",
         "short_desc": "Супер",
         "description": "Супер",
         "price": "29829.5",
