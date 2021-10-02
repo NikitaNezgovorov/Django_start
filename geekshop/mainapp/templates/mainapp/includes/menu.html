@@ -7,7 +7,7 @@
             Главная
         </a>
         </li>
-        <li><a href="{% url 'product:index' %}"
+        <li><a href="{% url 'products:index' %}"
                class="{% if request.resolver_match.url_name == 'index' or request.resolver_match.url_name == 'category' %}active{% endif %}">
             продукты
         </a>
@@ -36,11 +36,20 @@
 
     <a href="#" class="search"></a>
     <a href="{% url 'basket:view' %}" class="basket">
-    <span>
+        {#        <span>#}
+        {#            {% if basket %}#}
+        {#                {{ basket.0.total_cost|floatformat:0 }} руб#}
+        {#                ({{ basket.0.total_quantity }} шт)#}
+        {#            {% endif %}#}
+        {#        </span>#}
+        <span>
         {% if basket %}
-      {{ basket.0.total_cost|floatformat:0 }} руб
-      ({{ basket.0.total_quantity }} шт)
+            {{ basket.0.total_cost|floatformat:0 }} руб
+            ({{ basket.0.total_quantity }} шт)
         {% endif %}
-    </span>
+        </span>
     </a>
+
+
+
 </div>

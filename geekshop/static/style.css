@@ -258,6 +258,7 @@ html, body {
 .tab-content {
 	margin-top: 50px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 120px;
 }
