@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404
 def main(request):
     title = 'главная'
     basket = []
-    products = Product.objects.all()[:4]
+    products = Product.objects.all()[:8]
     if request.user.is_authenticated:
         basket = Basket.objects.filter(user=request.user)
     content = {
