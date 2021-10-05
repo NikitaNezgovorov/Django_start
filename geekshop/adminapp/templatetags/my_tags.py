@@ -3,6 +3,7 @@ from django.conf import settings
 
 register = template.Library()
 
+
 def media_folder_products(string):
     """
     Автоматически добавляет относительный URL-путь к медиафайлам продуктов
@@ -24,5 +25,6 @@ def media_folder_users(string):
         string = 'users_avatars/default.jpg'
 
     return f'{settings.MEDIA_URL}{string}'
+
 
 register.filter('media_folder_products', media_folder_products)
