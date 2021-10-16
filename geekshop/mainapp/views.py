@@ -9,7 +9,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def main(request):
     title = 'главная'
     basket = []
-    products = Product.objects.all()[:8]
+    products = Product.objects.all()[:4]
     if request.user.is_authenticated:
         basket = Basket.objects.filter(user=request.user)
     content = {
