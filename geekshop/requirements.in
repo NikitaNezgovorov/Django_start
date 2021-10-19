@@ -1,5 +1,5 @@
 # requirements.in
-psycopg2
+psycopg2-binary
 pillow
 django
 django-debug-toolbar

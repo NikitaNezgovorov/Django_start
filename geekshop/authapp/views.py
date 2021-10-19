@@ -64,8 +64,8 @@ def register(request):
                 return HttpResponseRedirect(reverse('auth:login'))
     else:
         register_form = ShopUserRegisterForm()
-        content = {'title': title, 'register_form': register_form}
-        return render(request, 'authapp/register.html', content)
+    content = {'title': title, 'register_form': register_form}
+    return render(request, 'authapp/register.html', content)
 
 
 def send_verify_mail(user):
