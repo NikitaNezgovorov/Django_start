@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include, re_path
 import mainapp.views as mainapp
+from django.views.decorators.cache import cache_page
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -30,10 +31,9 @@ urlpatterns = [
     path('order/', include('ordersapp.urls', namespace='order')),
     path('basket/', include('basketapp.urls', namespace='basket')),
     path('admin/', include('adminapp.urls', namespace='admin')),
+    re_path(r'^category/(?P<pk>\d+)/$', cache_page(3600)(mainapp.products)),
 
 ]
-
-
 
 if settings.DEBUG:
     import debug_toolbar
