@@ -707,9 +707,14 @@ html, body {
 }
 
 .basket span {
-	display: block;
-    margin-left: 30px;
-    width: 150px;
+	padding-left: 27px;
+	color: #8c8c8c;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	height: 23px;
+	display: inline-block;
+	width: 100px;
 }
 
 .clearfix:after {
@@ -880,6 +885,7 @@ html, body {
 .tab-content {
 	margin-top: 50px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 120px;
 }
@@ -921,13 +927,13 @@ html, body {
 }
 
 .promo-content-1 {
-	background-image: url(/static/img/promo-img1.jpg);
+	background-image: url(img/promo-img1.jpg);
 	width: 683px;
 	height: 683px;
 	float: left;
 }
 .promo-content-2 {
-	background-image: url(/static/img/promo-img2.jpg);
+	background-image: url(img/promo-img2.jpg);
 	width: 683px;
 	height: 683px;
 	float: right;
@@ -1036,7 +1042,7 @@ html, body {
 	margin-top: 105px;
 	height: 800px;
 	padding-left: 98px;
-	background-image: url(/static/img/slider-hotdeal.jpg);
+	background-image: url(img/slider-hotdeal.jpg);
 	position: relative;
 }
 .text-hotDeal {
@@ -1065,7 +1071,7 @@ html, body {
 	height: 570px;
 	width: 570px;	
 	float: left;
-	background-image: url(/static/img/product-1-lg.jpg);
+	background-image: url(img/product-1-lg.jpg);
 }
 .exclusive-small {
 	width: 570px;
@@ -1125,7 +1131,7 @@ html, body {
 .mobile {
 	height: 516px;
 	margin-top: 90px;
-	background-image: url(/static/img/mobile-back.jpg);
+	background-image: url(img/mobile-back.jpg);
 	padding-left: 99px;
 	position: relative;
 }
@@ -1696,4 +1702,19 @@ td:first-child {
 }
 .related-products a:hover .text{
 	display: block;
+}
+
+.products_list .title .paginator{
+    display: block;
+    position: relative;
+    left: 75px;
+    top: 15px;
+    margin-left: 25px;
+    color: #555;
+    float: left;
+}
+
+.paginator a, .paginator a:visited {
+	color: #555;
+	text-decoration: none;
 }
